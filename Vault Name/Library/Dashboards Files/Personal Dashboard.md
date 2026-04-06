@@ -61,7 +61,7 @@ id: Purpose
 hidden: true
 actions:
 - type: open
-  link: Project Reference/_Homepages/Personal Development
+  link: Library/Dashboards Files/Personal Development
   newTab: true
 ```
 
