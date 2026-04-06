@@ -1,0 +1,25 @@
+properties:
+  file.name:
+    displayName: Book Title
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Project Reference/Project Reference 1"
+    order:
+      - file.name
+      - Author
+      - Chapter
+      - Core Value
+      - Genre
+      - Start Time
+      - Cover
+      - Subject
+      - Project
+      - Parent
+    sort:
+      - property: Start Time
+        direction: DESC
+      - property: Core Values
+        direction: ASC

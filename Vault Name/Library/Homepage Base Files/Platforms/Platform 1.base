@@ -1,0 +1,7 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Platforms/Platform 1"
+        - Platform == "Platform 1"

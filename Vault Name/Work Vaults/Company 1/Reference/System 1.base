@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Work Vaults/Company 1/Systems/System 1"
+        - Parent == "Work"
+        - Project == "Project 1"
+        - Company == "Company 1"
+        - Platform == "Platform 1"
+    order:
+      - file.name
+      - Parent
+      - Company
+      - Project
+      - Platform
+    columnSize:
+      file.name: 144
