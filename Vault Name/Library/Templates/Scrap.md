@@ -3,7 +3,7 @@
 
 `BUTTON[Personal_Dashboard]` `BUTTON[Work_Dashboard]` 
 
-`BUTTON[Purpose]` `BUTTON[Scrap]`
+`BUTTON[Purpose]` `BUTTON[Scr
 
 ---
 
@@ -41,7 +41,7 @@ id: Work_Dashboard
 hidden: true
 actions:
 - type: open
-  link: Library/Templates/Scrap
+  link: Work Vaults/Company 1/Reference/Work Dashboard
   newTab: true
 ```
 

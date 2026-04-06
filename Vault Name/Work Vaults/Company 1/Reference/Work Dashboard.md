@@ -10,7 +10,7 @@ cssclasses:
 ---
 <div class="work-banner"></div>
 
-
+I like the idea of scrap notes to quickly write something down. I also like buttons to quickly link to common projects. 
 `BUTTON[Scrap]` `BUTTON[Project_1]` 
 
 > [! ] 
