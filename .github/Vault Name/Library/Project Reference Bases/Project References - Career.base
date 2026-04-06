@@ -1,0 +1,21 @@
+properties:
+  file.name:
+    displayName: Task
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Parent == "Personal"
+        - file.folder == "Project Reference/Career"
+        - Project == "Career"
+    order:
+      - file.name
+      - Notes
+      - Date Due
+    sort:
+      - property: Notes
+        direction: ASC
+    columnSize:
+      file.name: 205
+      note.Notes: 281

@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Parent == "Work"
+        - Company == "Company 1"
+        - Department == "Brand 1"
+        - file.folder == "Work Vaults/Company 1/Brand 1"
+    order:
+      - file.name
+      - Department
+      - Company
+      - Parent
+      - Platform

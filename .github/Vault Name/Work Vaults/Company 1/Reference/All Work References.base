@@ -1,0 +1,336 @@
+properties:
+  file.name:
+    displayName: Task
+  note.Address:
+    displayName: Location
+  note.time:
+    displayName: Date and Time
+  note.Time End:
+    displayName: End
+  note.Time Start:
+    displayName: Start
+  file.ctime:
+    displayName: Created
+views:
+  - type: table
+    name: All Work References
+    filters:
+      and:
+        - Parent == "Work"
+        - file.folder == "Work Vaults/Company 1/Systems/System 1"
+        - Platform == "Platform 1"
+    order:
+      - file.name
+      - Department
+      - Company
+      - Platform
+      - Project
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 10
+    columnSize:
+      file.name: 240
+  - type: table
+    name: All Notes
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Address
+      - Due Date
+      - Notes
+      - Time Start
+      - Time End
+    sort:
+      - property: Time Start
+        direction: ASC
+      - property: file.folder
+        direction: ASC
+      - property: Start Time
+        direction: DESC
+      - property: Project
+        direction: ASC
+      - property: Parent
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.Project: 179
+      note.Platform: 120
+      note.Status: 100
+      note.Address: 212
+      note.Due Date: 125
+      note.Time Start: 181
+      note.Time End: 177
+  - type: table
+    name: Sled Hockey
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Personal"
+        - Project == "Sled Hockey"
+        - Status != "Done"
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Time Start
+      - Time End
+      - Address
+      - Notes
+    sort:
+      - property: Project
+        direction: ASC
+    columnSize:
+      note.Project: 179
+      note.Status: 100
+      note.Time Start: 181
+      note.Time End: 177
+      note.Address: 212
+      note.time: 203
+      note.Due Date: 185
+  - type: table
+    name: All Personal Tasks
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Personal"
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Time Start
+      - Time End
+      - Address
+      - Notes
+    sort:
+      - property: Project
+        direction: ASC
+    columnSize:
+      note.Project: 179
+      note.Status: 100
+      note.Time Start: 181
+      note.Time End: 177
+      note.Address: 212
+      note.time: 203
+      note.Due Date: 185
+  - type: table
+    name: All Work Tasks
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Work"
+    order:
+      - Parent
+      - Company
+      - Department
+      - Project
+      - Platform
+      - file.name
+      - Status
+      - Dependent
+      - file.ctime
+      - Date Due
+      - Completed
+      - Notes
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: Assigned
+        direction: ASC
+  - type: table
+    name: Platforms
+  - type: table
+    name: Career
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Personal"
+        - Project == "Career"
+        - Status != "Done"
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Time Start
+      - Time End
+      - Notes
+    sort:
+      - property: Project
+        direction: ASC
+    columnSize:
+      note.Project: 179
+      note.Status: 100
+      note.Time Start: 181
+      note.Time End: 177
+      note.Address: 212
+      note.time: 203
+      note.Due Date: 185
+  - type: table
+    name: BonsaI
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Personal"
+        - Project == "Bonsai"
+        - Status != "Done"
+    order:
+      - Parent
+      - Project
+      - Species
+      - Type
+      - file.name
+      - Status
+      - Time Start
+      - Time End
+      - Address
+      - Notes
+      - Next Wiring
+      - Next Watering
+      - Next Fertilizing
+      - Last Wired
+      - Last Watered
+      - Last Prunned
+      - Last Fertilized
+      - Date Bought
+      - Cover
+    sort:
+      - property: Project
+        direction: ASC
+    columnSize:
+      note.Project: 179
+      note.Status: 100
+      note.Time Start: 181
+      note.Time End: 177
+      note.Address: 212
+      note.time: 203
+      note.Due Date: 185
+  - type: table
+    name: Volunteering
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Personal"
+        - or:
+            - Project == "Disability Advocates"
+            - Project == "Embracing Imperfections"
+        - Status != "Done"
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Time Start
+      - Time End
+      - Address
+      - Notes
+    sort:
+      - property: Project
+        direction: ASC
+    columnSize:
+      note.Project: 179
+      note.Status: 100
+      note.Time Start: 181
+      note.Time End: 177
+      note.Address: 212
+      note.time: 203
+      note.Due Date: 185
+  - type: table
+    name: Family
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Personal"
+        - Project == "Family"
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Time Start
+      - Time End
+      - Address
+      - Notes
+    sort:
+      - property: Project
+        direction: ASC
+    columnSize:
+      note.Project: 179
+      note.Status: 100
+      note.Time Start: 181
+      note.Time End: 177
+      note.Address: 212
+      note.time: 203
+      note.Due Date: 185
+  - type: table
+    name: Home
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Personal"
+        - Project == "Home"
+        - Status != "Done"
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Time Start
+      - Time End
+      - Address
+      - Notes
+    sort:
+      - property: Project
+        direction: ASC
+    columnSize:
+      note.Project: 179
+      note.Status: 100
+      note.Time Start: 181
+      note.Time End: 177
+      note.Address: 212
+      note.time: 203
+      note.Due Date: 185
+  - type: table
+    name: Website
+    filters:
+      and:
+        - file.folder == "Waddle"
+        - Parent == "Personal"
+        - Project == "Website"
+        - Status != "Done"
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Time Start
+      - Issues
+      - Notes
+    sort:
+      - property: Project
+        direction: ASC
+    columnSize:
+      note.Project: 104
+      file.name: 266
+      note.Status: 100
+      note.Time Start: 181
+      note.Time End: 177
+      note.Address: 212
+  - type: table
+    name: Goals
+    filters:
+      and:
+        - Project == "Goals"
+    order:
+      - Parent
+      - Project
+      - file.name
+      - Status
+      - Time Start
+      - Time End
+      - Notes

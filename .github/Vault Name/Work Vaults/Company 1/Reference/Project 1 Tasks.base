@@ -1,0 +1,19 @@
+properties:
+  file.name:
+    displayName: Task
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Parent == "Work"
+        - Project == "Project 1"
+        - Status != "Done"
+        - file.folder == "Work Vaults/Company 1/Department 1/Tasks"
+        - Company == "Company 1"
+    order:
+      - file.name
+      - Company
+      - Department
+      - Parent
+      - Platform

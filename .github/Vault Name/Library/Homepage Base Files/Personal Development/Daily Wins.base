@@ -1,0 +1,27 @@
+properties:
+  file.name:
+    displayName: Name of Win
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Personal Development/Daily Wins"
+        - Parent == "Personal"
+        - Project == "Purpose"
+    order:
+      - file.name
+      - Impact
+      - Mood
+      - Core Value
+      - Notes
+      - Project
+      - Parent
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 348
+      note.Impact: 97
+      note.Notes: 94
+    indentProperties: true

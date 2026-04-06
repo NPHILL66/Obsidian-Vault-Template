@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Parent == "Personal"
+        - Project == "Home"
+        - file.folder == "Project Reference/House"
+    order:
+      - file.name
+      - Date Due
+      - Notes
+    columnSize:
+      file.name: 160
