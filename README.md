@@ -1,1 +1,1 @@
-# Obsidian
+# Obsidian Vault Template
