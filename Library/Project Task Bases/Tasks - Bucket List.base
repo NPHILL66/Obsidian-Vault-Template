@@ -1,0 +1,16 @@
+properties:
+  file.name:
+    displayName: Item Name
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Project == "Bucket List"
+        - Parent == "Personal"
+    order:
+      - file.name
+      - location
+      - Parent
+      - Project
+      - Notes

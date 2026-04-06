@@ -1,0 +1,23 @@
+properties:
+  file.name:
+    displayName: Question
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Personal Development/Questions to Ask Myself"
+        - Parent == "Personal"
+        - Project == "Purpose"
+    order:
+      - file.name
+      - Impact
+      - Mood
+      - Core Value
+      - Notes
+      - Project
+      - Parent
+    sort: []
+    columnSize:
+      file.name: 198
+    indentProperties: true

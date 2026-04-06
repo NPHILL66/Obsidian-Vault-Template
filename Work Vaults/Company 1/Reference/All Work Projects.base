@@ -1,0 +1,23 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Parent == "Work"
+        - file.folder == "Work Vaults/Company 1/Department 1/Projects"
+    order:
+      - file.name
+      - Status
+      - Platform
+      - Project
+      - Company
+      - Department
+      - Parent
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: Status
+        direction: ASC
+    columnSize:
+      file.name: 130
+      note.Status: 98
