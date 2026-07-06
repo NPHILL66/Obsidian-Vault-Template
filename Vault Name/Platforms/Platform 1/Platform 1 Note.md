@@ -1,3 +1,0 @@
----
-Platform: Platform 1
----
